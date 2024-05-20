@@ -1,7 +1,32 @@
-[![Shipping files](https://github.com/neuefische/ds-eda-project-template/actions/workflows/workflow-03.yml/badge.svg?branch=main&event=workflow_dispatch)](https://github.com/neuefische/ds-eda-project-template/actions/workflows/workflow-03.yml)
-# ds-project-template
+# Project Name - Exploratory Data Analysis (EDA) of Kings County housing
+Contributor: Dipali Kale
 
-Template for creating ds simple projects
+This project is example exploratory data analysis as a part of NeueFische Datascience Bootcamp.
+
+Assignment :
+Through EDA/statistical analysis prodive  **insights** regarding the overall data, and provide **AT LEAST 3 recommendations** to the  client.
+
+ Name of client- Larry Sanders
+ Characteristics:  Buyer|Waterfront , limited budget, nice & isolated but central neighborhood without kids (but got some of his own, just doesn't want his kids to play with other)
+
+
+
+## Research questions and hypothesis generation
+
+For this project following research question was addressed, and hypothesis were tested
+
+|Hypotheses | Indicators |
+|:------------|:------------|
+|1. The closer a house is to the city center, the higher the price|geolocation |
+|2. If a house is located near waterfront, and has nice condition, then the price is higher |waterfront(yes/no)|
+
+
+This repo contains 
+- [SQL code to export data](1_sql-data-import.ipynb)
+- [Data exploration and cleaning ](2_Data_cleaning.ipynb)
+- [Exploratory data analysis of KCHD ](3_EDA.ipynb)
+- [code for data cleaning](data_cleaning.py)
+
 
 ## Requirements
 
@@ -10,34 +35,8 @@ Template for creating ds simple projects
 
 ## Setup
 
-One of the first steps when starting any data science project is to create a virtual environment. For this project you have to create this environment from scratch yourself. However, you should be already familiar with the commands you will need to do so. The general workflow consists of... 
+ The general workflow for creating virtual environment in python version locally to 3.11.3, and installing the required packages via `pip`
 
-* setting the python version locally to 3.11.3
-* creating a virtual environment using the `venv` module
-* activating your newly created environment 
-* upgrading `pip` (This step is not absolutely necessary, but will save you trouble when installing some packages.)
-* installing the required packages via `pip`
-
-At the end, you want to make sure that people who are interested in your project can create an identical environment on their own computer in order to be able to run your code without running into errors. Therefore you can create a `requirements file` and add it to your repository. You can create such a file by running the following command: 
-
-```bash
-pip freeze > requirements.txt
-```
-
-*Note: In rare case such a requirements file created with `pip freeze` might not ensure that another (especially M1 chip) user can install and execute it properly. This can happen if libraries need to be compiled (e.g. SciPy). Then it also depends on environment variables and the actual system libraries.*
-
-### Unit testing (Optional)
-
-If you write python scripts for your data processing methods, you can also write unit tests. In order to run the tests execute in terminal:
-
-```bash
-pytest
-```
-
-This command will execute all the functions in your project that start with the word **test**.
-
-
-## Set up your Environment
 This repo contains a requirements.txt file with a list of all the packages and dependencies you will need. Before you install the virtual environment, make sure to install postgresql if you haven't done it before.
 
  - Check the **postgresql version**  by run the following commands:
@@ -164,10 +163,10 @@ Before you can start with plotly in Jupyter Lab you have to install node.js (if 
     pip install -r requirements.txt
     ```
  
-
  **`Note:`**
     If you encounter an error when trying to run `pip install --upgrade pip`, try using the following command:
 
    ```Bash
    python.exe -m pip install --upgrade pip
    ```
+
