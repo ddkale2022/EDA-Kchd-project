@@ -1,4 +1,4 @@
-# Project Name - Exploratory Data Analysis (EDA) of Kings County housing
+# Project Name - Exploratory Data Analysis (EDA) of Kings County housing dataset
 Contributor: Dipali Kale
 
 This project is example exploratory data analysis as a part of NeueFische Datascience Bootcamp.
@@ -26,7 +26,7 @@ This repo contains
 - [Data exploration and cleaning ](2_Data_cleaning.ipynb)
 - [Exploratory data analysis of KCHD ](3_EDA.ipynb)
 - [code for data cleaning](data_cleaning.py)
-
+- [column names](column_names.md)
 
 ## Requirements
 
